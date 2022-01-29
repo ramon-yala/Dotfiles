@@ -1,0 +1,82 @@
+configuration {
+    font:                           "Organo Regular 12";
+    show-icons:                     true;
+    scroll-method:                  0;
+    border-radius:                  18px;
+}
+
+* {
+    background:                     #00000000;
+
+    background-color:               #f2d2ff49;
+
+    background-alt:                 #8443aa9d;
+    foreground:                     #111111;
+    foreground-selected:            #000000;
+    
+    background-entry:               #ff0505;
+    urgent:                         #ff0505;
+    urgent-selected:                #ff0505;
+}
+
+
+window {
+    transparency:                   "real";
+    height:                         28%;
+    width:                          16%;
+    background-color:               @background-color;
+    text-color:                     @foreground;
+    location:                       south;
+
+    //for mac version
+    //x-offset:                       41.5%;
+    //y-offset:                       -5%;
+
+    //for window version
+    x-offset:                       37.4%;
+    y-offset:                       -5%;
+    //for window version
+    border:                         3px;
+    border-color:                   @border-color;
+
+    
+}
+
+prompt {
+    enabled: 						true;
+    padding:                        5px ;
+    position:                       north;
+}
+
+listview {
+    layout:                         vertical;
+}
+
+mainbox {
+    background-color:               @background-color;
+    children:                       [ prompt, listview ];
+}
+
+element {
+    background-color:               @background;
+    orientation:                    horizontal;
+    border-radius:                  0px;
+	padding: 						1px 1px 1px -30px;
+}
+
+element-icon {
+    size:                           25px;
+    border:                         0px;
+}
+
+element-text {
+    expand:                         true;
+    vertical-align:                 0.5;
+    margin:                         1px 5px 5px 5px;
+    
+}
+
+element selected {
+    background-color:               @background-alt;
+    border-color:                  	@background-color;
+}

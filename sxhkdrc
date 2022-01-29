@@ -1,0 +1,133 @@
+#
+# ~/.config/sxhkd/sxhkdrc
+#
+#--------------------------------hot keys---------
+# terminal emulator
+super + Return
+	tilix
+
+# program launcher
+alt + d
+	rofi -show drun 
+
+alt + c
+	code
+
+alt + b
+	firefox
+
+alt + e
+	nautilus
+
+#-------------------window manager behavior---------
+
+super + ctrl + p
+	polybar-msg cmd toggle
+
+super + alt + {q,r}
+	bspc {quit,wm -r}
+
+ 
+super + {_,shift + }z
+	bspc node -{c,k}
+
+super + m
+	bspc desktop -l next
+
+super + alt + {Up,Down}
+	bspc config -d focused window_gap $((`bspc config -d focused window_gap` {-,+} 5 ))
+
+super + alt + n
+	bspc node -s biggest
+
+super + {a,s,d,f}
+	bspc node -t {pseudo_tiled,floating,tiled,fullscreen}
+
+alt + space
+	bspc node -t "~"{floating,tiled}
+
+super + {_,shift + }{h,j,k,l}
+	bspc node -{f,s} {west,south,north,east}
+
+super + {_,shift + }{Left,Down,Up,Right}
+	bspc node -{f,s} {west,south,north,east}
+
+super + {_,alt + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+
+super + alt + {Left,Right}
+	bspc desktop -f {prev,next}.local
+
+super + shift + {Left,Right}
+	bspc wm -h off; \
+	bspc node {older,newer} -f; \
+	bspc wm -h on
+
+super + ctrl + {Right,Left}
+	bspc node -d {next,prev} -f
+
+super + {grave,Tab}
+	bspc {node,desktop} -f last
+
+super + ctrl + {h,j,k,l}
+	bspc node -p {west,south,north,east}
+
+super + ctrl + {1-9}
+	bspc node -o 0.{1-9}
+
+alt + l
+    betterlockscreen -l dimblur 
+
+alt + p
+	kill picom	
+
+super + alt + {h,j,k,l}
+	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+
+super + alt + shift + {h,j,k,l}
+	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+
+ctrl + {Left,Down,Up,Right}
+	bspc node -v {-20 0,0 20,0 -20,20 0}	
+
+super + b
+	bspc node @focused:/ -B
+
+super + Escape
+	pkill -USR1 -x sxhkd
+
+super + button{4,5}
+	bspc config -d focused window_gap $((`bspc config -d focused window_gap` {-,+} 5 ))
+
+super + alt + button{4,5}
+	bspc config window_gap $(( $(bspc config window_gap) {-,+} 5 ))
+
+super + g
+	bspc node -g sticky
+
+super + alt + {m,x,z}
+	bspc node -g {marked,locked,private}
+
+alt + {_,shift + }Tab
+	bspc node -f {next,prev}.local
+
+ctrl + super + space
+	bspc node -p cancel
+
+super + ctrl + shift + space
+	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
+#-----------------------------------------------------
+
+#Volume Control
+XF86AudioLowerVolume
+	amixer set Master 5%-
+XF86AudioRaiseVolume
+	amixer set Master 5%+
+XF86AudioMute
+    amixer set Master toggle
+
+#Brightness control    esto nuca lo ise funcionar devido a mi driver pero lo ago funcionar con una funcion en zsh XD
+XF86MonBrightnessDown
+	xbacklight -dec 5
+XF86MonBrightnessUp
+	xbacklight -inc 5

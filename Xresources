@@ -1,0 +1,67 @@
+! general settings
+URxvt*termName: 		rxvt
+URxvt.urlLauncher:      firefox
+URxvt.underlineURLs:    true
+URxvt.urlButton:        1
+URxvt.iso14755:         false
+URxvt.iso14755_52:      false
+
+! appearance
+URxvt.geometry: 		     90x27
+URxvt.depth:             32
+URxvt.transparent:       false
+URxvt.shading:           80
+URxvt.scrollBar:         false
+URxvt.scrollTtyOutput:   false
+URxvt.scrollWithBuffer:  true
+URxvt.scrollTtyKeypress: true
+URxvt.internalBorder:    20
+URxvt.externalBorder:    0
+
+! fonts
+URxvt.letterSpace: 	    		0
+URxvt.font:                 xft:Hurmit Nerd Font:size=11, xft:Font Awesome 5 Free-Regular-400:size=14, xft:FontAwesome:size=12
+
+URxvt.boldFont:             xft:Hurmit Nerd Font:size=11:autohint=true:style=bold
+Urxvt.italicFont:           xft:Hurmit Nerd Font:size=11:autohint=true:style=italic
+Urxvt.boldItalicFont:       xft:Hurmit Nerd Font:size=11:autohint=true:style=bold:italic
+
+! special
+URxvt*foreground:   #00BAB7
+URxvt*background:   [40]#000000
+URxvt*cursorColor:  #bd93f9
+
+*highlightTextColor: 		#383c4a
+*highlightColor: 		#c1ddff
+
+! black
+*.color0:       #5EA9AB
+*.color8:       #434758
+
+! red
+*.color1:       #5EA9AB
+*.color9:       #5EA9AB
+
+! green
+*.color2:       #c3e88d
+*.color10:      #ddffa7
+
+! yellow
+*.color3:       #ffcb6b
+*.color11:      #ffe585
+
+! blue
+*.color4:       #82aaff
+*.color12:      #9cc4ff
+
+! magenta
+*.color5:       #c792ea
+*.color13:      #e1acff
+
+! cyan
+*.color6:       #89ddff
+*.color14:      #a3f7ff
+
+! white
+*.color7:       #d0d0d0
+*.color15:      #ffffff
