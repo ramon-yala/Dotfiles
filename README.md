@@ -1,7 +1,6 @@
 # Mis archivos de configurcaiond de BSPwm
 
-Esta es mi configuracion de BSPwm, la distro que actualmente uso es GNU Fedora linux
-
+Esta es mi configuracion de BSPwm en fedora linux 35
 
 ## Screenshots
 
