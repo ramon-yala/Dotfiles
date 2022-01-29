@@ -5,7 +5,7 @@ Esta es mi configuracion de BSPwm, la distro que actualmente uso es GNU Fedora l
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/ramon-yala/Dotfiles/blob/main/Screenshots/screnshot1.png?raw=true)
 
 
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
