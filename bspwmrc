@@ -8,7 +8,7 @@ plank &
 $HOME/.config/polybar/launch.sh &
 
 #set wallpaper
-feh --bg-fill $HOME/Imágenes/Img2.jpg
+feh --bg-fill $HOME/Imágenes/Img2.jpeg
 
 #monitor´s
 bspc monitor -d I II III IV V VI VII VIII IX
