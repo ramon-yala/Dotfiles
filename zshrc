@@ -27,9 +27,9 @@ alias la='lsd -a --group-dirs=first'
 alias lla='lsd -lha --group-dirs=first'
 alias ls='lsd --group-dirs=first'
 
-alias b='vi .config/bspwm/bspwmrc'
-alias p='vi .config/polybar/polybar'
-alias r='vi .config/rofi/themes'
+alias b='code .config/bspwm/bspwmrc'
+alias p='code .config/polybar/polybar'
+alias r='code .config/rofi/themes'
 
 #===========================Function´s=================
 function vi(){
@@ -49,6 +49,11 @@ function up(){
 }
 function luz(){
         sudo tlp start |cd /sys/class/backlight/intel_backlight
+}
+function gitbspwm(){
+	git add .
+	git commit -m "bspwm"
+	git push origin main 
 }
 #============================plugins========================
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
