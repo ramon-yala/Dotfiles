@@ -1,6 +1,6 @@
 # Mis archivos de configurcaiond de BSPwm
 
-Esta es mi configuracion de BSPwm en fedora linux 35
+Esta es mi configuracion de BSPwm en fedora linux 35.
 
 ## Screenshots
 
@@ -27,7 +27,7 @@ Para la polybar, uso los temas de  [adi1090x-polybar_themes](https://github.com/
 
 La funte que uso es [Hurmit nerd font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hermit.zip).
 
-Para los iconos en la terminal, checa el repositorio de [Peltoche-lsd](https://github.com/Peltoche/lsd)
+Para los iconos en la terminal, checa el repositorio de [Peltoche-lsd](https://github.com/Peltoche/lsd).
 
 <img src="https://github.com/ramon-yala/Dotfiles/blob/main/Screenshots/icons-term.png?raw=true" height="200" alt="icons-term">
 
