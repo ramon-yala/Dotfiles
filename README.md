@@ -29,7 +29,7 @@ La funte que uso es [Hurmit nerd font](https://github.com/ryanoasis/nerd-fonts/r
 
 Para los iconos en la terminal, checa el repositorio de [Peltoche-lsd](https://github.com/Peltoche/lsd)
 
-<img src="#" height="200" alt="icons-term">
+<img src="https://github.com/ramon-yala/Dotfiles/blob/main/Screenshots/icons-term.png?raw=true" height="200" alt="icons-term">
 
 ## Authors
 
